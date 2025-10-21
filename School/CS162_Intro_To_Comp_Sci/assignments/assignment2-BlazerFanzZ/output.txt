@@ -1,0 +1,14 @@
+Wacky_Witch_Handbook Gretchen 1344 19 3
+	Bubble_Beam 100 bubble
+Forbidden_Tome Voldemort 1938 1 2
+Necronomicon LoveCraft 1890 3 5
+Enchiridion various_heros 2090 1 5
+	Dog_Stretch 70.883 bubble
+Charming_Charms Linda_Charming 4460 3 4
+	Smile 99.9 bubble
+	Lucky_One 54.331 bubble
+Dorian Ludvig_Vivaldi 50000 1 2
+The_Uses_of_Excalibur Merlin 3322 2 3
+Spells_for_Dummies Tracey_Wood 305 1 4
+	Exploratory_Maneuver 88.5 bubble
+	Introductory_Levitation 77.62 bubble

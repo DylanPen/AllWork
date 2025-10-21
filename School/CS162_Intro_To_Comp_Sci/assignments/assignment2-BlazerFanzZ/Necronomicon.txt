@@ -1,0 +1,6 @@
+Necronomicon LoveCraft 1890 3 5
+	Wacky_Dreams 89.8 memory_loss
+	Cthulhu_Venom 77.2 poison
+	Deathrock 20.4 death
+	Nightmare 25.89 death
+	Deadly_Details 5.02 death

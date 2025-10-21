@@ -1,0 +1,15 @@
+Wacky_Witch_Handbook Gretchen 1344 19 3
+	Blasto_Strike 40.6 fire
+Forbidden_Tome Voldemort 1938 1 2
+Necronomicon LoveCraft 1890 3 5
+Enchiridion various_heros 2090 1 5
+	Not_Ice_Blast 92.744 fire
+	Blush 100 fire
+Charming_Charms Linda_Charming 4460 3 4
+	Sunshine 73.2 fire
+Dorian Ludvig_Vivaldi 50000 1 2
+	Music_To_Me 87.32 fire
+The_Uses_of_Excalibur Merlin 3322 2 3
+	Strong_Swing 68.7 fire
+Spells_for_Dummies Tracey_Wood 305 1 4
+	Beginning_Blast 97.3 fire

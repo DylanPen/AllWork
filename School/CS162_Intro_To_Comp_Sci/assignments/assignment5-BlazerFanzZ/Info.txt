@@ -1,0 +1,10 @@
+Dylan Peniuk - peniukd@oregonstate.edu
+ 
+run both programs after making it with test_program. for linked list continue to press enter to continue to the next test.
+
+no parts were incomplete so no limitations
+
+no extra credit was done
+
+the algorithm was a merge sort. it splits the list in the middle till its all split then it sorts in ascending or descending order depending on the function call.
+big O runtime complexity would be O(nlog(n))
