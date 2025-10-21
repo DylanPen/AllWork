@@ -1,0 +1,90 @@
+Lecture 1, 9/29:
+    pwd - shows current directory
+    ls - shows content of current folder
+    ls -l - shows mroe info about each file in directory
+    mkdir <folder name> - makes new folder
+    cd <folder name> - moves to folder
+    cd .. - moves to parent directory
+    vim <file name> - opens file in vim
+    touch <file name> - makes new file or updates existing file
+    gcc <c file> - compiles C file to an executable
+    ./a.out - executes file
+    ln c.txt d.txt - links c.txt and d.txt (hardlink points to same Inode), second file must not already exist
+    ln -s <file name1> <file name2> - file 2 is a symbolic link to the file 1 hard link
+    stat <file name> - shows info about the file, including Inode number
+    rm <file name> - deletes the hardlink from the file
+    unlink <file name> - removes a link to a file
+    cat <file name> - allows you to view/read the contents of a file
+    echo "string" - prints to terminal
+    echo "string" >> <file name> - appends string to file (must have write permissions)
+    echo "string" > <file name> - replaces file data with string (must have write permissions)
+
+
+    Every file has an Inode
+        Inodes contain:
+            File pointer
+                Points to file contents
+            Meta data which contains
+                Size
+                Permissions
+                Owning user
+                Owning group
+            Inode number
+                interger which identifies the Inode
+            Reference count
+                number of hardlinks which refence the Inode   
+
+    Hard links will never point to deleted items
+    Symbolic links can point to deleted hard links
+    All hardlinks must be on the same hard drvie that the Inode points to   
+
+
+    -rw-r--r-- 
+        First Char tells what kind of file it is
+            - is normal file
+            l is symbolic link
+            d is a directory
+        Next 9 are permission chars
+            permissions are tied to Inodes
+            Permissions may be read, write, or execution
+            First 3 are permissions of the owner
+                Owner can read and write but not execute
+            Middle 3 are permission of non owners in the group
+                they can read but not write or execute
+            Last 3 are for permissions for all other users
+                they can read but not write or execute
+
+    A file in not executable by anyone by default in most cases
+    an executable permission for a directory means the directory is traversable.
+        This allows you to use cd and interact with the contents inside it
+            This is only true if you have read and/or write permissions of the directory
+
+    To change permissions of a file you must own it
+        chmod ugo-+=rwx a.txt
+            U = owning user
+            G = mombers of owning group
+            O = other users
+            - = remove permission
+            + = add permission
+            = = set permission 
+            r = read
+            w = write
+            x = execute
+            EXAMPLE:
+                -rwxrw-r-- -> chmod go+x <file name> -> -rwxrwxr-x
+        In C you must use a different format:
+            must specify an octal code
+            chmod 0111 a.txt
+                01 - execute permissions
+                02 - write permissions
+                04 - read permissions
+                Add these to combine permissions
+                06 - read and write permissions
+                0741:
+                    Owner perm = rwx
+                    Group members perm = r--
+                    Other perm = --x
+            umask is a permission octal code, default files will have permissions, subtracted by the umask value
+
+Lecture 2, 10/1:
+    When compiling, compile with gcc -g -o <c file>
