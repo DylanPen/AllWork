@@ -1,0 +1,2 @@
+Always use EQ function to test for the if condition
+    If TYPE doesnt declare numbers, then you must implement your own EQ function

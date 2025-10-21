@@ -1,0 +1,27 @@
+Static Arrays:
+    Pros:
+    - Simple
+    - Each element is accessable in 0(1)
+    Cons:
+    - Memory capacity must be fixed when created
+    - No easy way to later request for more Memory
+
+Doubling capacity:
+    1: Memorze old data pointer
+    2: allocate a new, larger space
+    3: copy data elements to the new space
+    4: Free old space
+
+Malloc:
+    - malloc() is a functon which dynamically allocates a block of memory (on the heap)
+
+Free:
+    - The argument free() can ONLY be a pointer
+        free(da->data);
+    - this pointer must be allocated with malloc()
+    - Suppose we declare:
+        TYPE data[10], x;
+        WRONG:
+            free(data);
+            free(data[i]);
+            free(&x);

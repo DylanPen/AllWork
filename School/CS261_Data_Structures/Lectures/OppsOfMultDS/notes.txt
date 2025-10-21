@@ -1,0 +1,31 @@
+Merge 2 Queues
+    Given 2 queues q1 and q2, whose elements are customers
+    merge q1 and q2 into a new queue q3
+    in O(n) time
+    Remove q1 and q2 from memory
+    q3 keeps the fifo property of the customers from q1 and q2
+
+    check if q1 and q2 are valid
+    initialize q3
+    loop simultaniously through q1 and q2 from q1->front and q2->front until the end of the smaller queue
+        Pick a customer from q1 or q2 with the smaller arrivla time
+        Add that element to q3
+    Add the remainder of the larger queue to q3
+    Remove q1 and q2 from memory
+
+
+Difference of bags
+    Check is b1 and b2 are valid inputs
+    if b1 is not empty
+        loop throuhg b2
+        read b2->data[i]
+        remove from b1 all elements with value equal to b2->data[i]
+
+
+Convert bag to set (Set is a bag with no repeating elements)
+    given a bag as an input
+    for each value in bag, keep a single instance and remove all the other duplicates
+        initialize an auxiliary set
+        copy unique elements from the bag to the set
+    return a pointer to the resulting set
+    all the functions of bags and dynamic arrays are available
