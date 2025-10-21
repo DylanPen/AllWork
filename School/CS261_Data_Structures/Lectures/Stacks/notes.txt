@@ -1,0 +1,3 @@
+Stack at ADT
+
+Definition: Maintains a collection of data elements in LIFO format
