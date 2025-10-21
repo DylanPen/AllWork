@@ -1,8 +1,0 @@
-deque index = (front + relative index) % capacity
-Adding/Removing for deque
-    - Add front
-        decrease the front index by 1 modulo capacity
-    - Remove Back
-        decrease the back index by 1 modulo capacity
- Computing back index:
- 

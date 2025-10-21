@@ -1,7 +1,0 @@
-COPY FILE: cp [file to copy] [where to copy to]
-REMOVE FILE: rm [file name]
-OPEN FILE: vim [file name]
-    ESC to brouse mode
-        :w to save
-        :q to quit
-        :wq to save and quit
