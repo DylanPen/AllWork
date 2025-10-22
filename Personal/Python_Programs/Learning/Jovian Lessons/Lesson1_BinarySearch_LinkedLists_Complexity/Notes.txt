@@ -5,3 +5,10 @@
     4: Implement the solution and test it using example inputs. Fix bugs, if any.
     5: Analyze the algorithm's complexity and identify inefficiencies, if any.
     6: Apply the right technique to overcome the inefficiency. Repeat steps 3 to 6.
+
+Binary Search Strategy:
+    1. Come up with a condition to determine whether the answer lies before, after or at a given position
+    2. Retrieve the midpoint and the middle element of the list.
+    3. If it is the answer, return the middle position as the answer.
+    4. If answer lies before it, repeat the search with the first half of the list
+    5. If the answer lies after it, repeat the search with the second half of the list.
